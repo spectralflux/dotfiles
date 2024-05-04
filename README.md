@@ -1,3 +1,5 @@
-# Dotfiles 2018 edition
+# Dotfiles
 
-To install, make sure to run setup_vim.sh first to create vim backup folder and download vim plugins, then move dot files into ~.
+dotfiles and config files that don't fit elsewhere.
+
+vim settings are now handled via neovim in the "nvimoconfig" repo.

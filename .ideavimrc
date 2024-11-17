@@ -24,10 +24,6 @@ set which-key
 
 let mapleader = " "
 
-" Jump between methods
-nnoremap [[ <Action>(MethodUp)
-nnoremap ]] <Action>(MethodDown)
-
 " Easy visual indentation
 vnoremap < <gv
 vnoremap > >gv
@@ -69,8 +65,15 @@ Plug 'tpope/vim-commentary'
 "" Map \r to the Reformat Code action
 map \r <Action>(ReformatCode)
 
-"" Map <leader>d to start debug
+"" debug
 map <leader>d <Action>(Debug)
+
+"" run
+map <leader>r <Action>(Run)
 
 "" Map \b to toggle the breakpoint on the current line
 map \b <Action>(ToggleLineBreakpoint)
+
+"" quick shows
+map <leader>sh <Action>(ShowHoverInfo)
+map <leader>ss <Action>(QuickImplementations)
